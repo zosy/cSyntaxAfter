@@ -59,7 +59,10 @@ function! CSyntaxAfter()
 	" ===================================================
 	
 	" c math operators
-	syn match cMathOperator display "[-+\*\%=]"
+	syn match cMathOperator display "[-+\*\%=()]"
+	
+	" c math blocks
+	syn match cBlocks display "[{}]"
 	
 	" c opinter operators
 	syn match cPointerOperator display "->\|\.\|\:\:"
@@ -89,6 +92,6 @@ function! CSyntaxAfter()
 	" hi cLogicalOperator ctermfg=yellow
 	" hi cLogicalOperatorError ctermfg=yellow
 	" hi cPriorityOpreator ctermfg=6
-
+        " hi link _Operator Operator
 endfunction
 
