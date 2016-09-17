@@ -62,7 +62,7 @@ function! CSyntaxAfter()
 	syn match cMathOperator display "[-+\*\%=]"
 	
 	" c math brackets
-	syn match cBrackets display "[{}()]"
+	"syn match cBrackets display "[{}()]" not working yet??!!
 	
 	" c opinter operators
 	syn match cPointerOperator display "->\|\.\|\:\:"
