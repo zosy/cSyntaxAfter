@@ -59,10 +59,10 @@ function! CSyntaxAfter()
 	" ===================================================
 	
 	" c math operators
-	syn match cMathOperator display "[-+\*\%=()]"
+	syn match cMathOperator display "[-+\*\%=]"
 	
-	" c math blocks
-	syn match cBlocks display "[{}]"
+	" c math brackets
+	syn match cBrackets display "[{}()]"
 	
 	" c opinter operators
 	syn match cPointerOperator display "->\|\.\|\:\:"
